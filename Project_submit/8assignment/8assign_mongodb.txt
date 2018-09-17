@@ -1,0 +1,52 @@
+  https://www.tutorialspoint.com/mongodb_terminal_online.php
+I worked in the above website for mongodb
+
+                                                        
+...............................Mongodb......................inserting the data.................................................
+
+> db.collection.insertOne( {Name:"Ramesh",Amount:100,City:"California"} )                                                                   
+{                                                                                                                                           
+        "acknowledged" : true,                                                                                                              
+        "insertedId" : ObjectId("5b0d97735101fc907977fa9b")                                                                                 
+}                                                                                                                                           
+> db.collection.insertOne( {Name:"James",Amount:10,City:"California"} )                                                                     
+{                                                                                                                                           
+        "acknowledged" : true,                                                                                                              
+        "insertedId" : ObjectId("5b0d97965101fc907977fa9c")                                                                                 
+}                                                                                                                                           
+> db.collection.insertOne( {Name:"David",Amount:40,City:"Seattle"} )                                                                        
+{                                                                                                                                           
+        "acknowledged" : true,                                                                                                              
+        "insertedId" : ObjectId("5b0d97c75101fc907977fa9d")                                                                                 
+}                                                                                                                                           
+> db.collection.insertOne( {Name:"Ray",Amount:140,City:"Seattle"} )                                                                         
+{                                                                                                                                           
+        "acknowledged" : true,                                                                                                              
+        "insertedId" : ObjectId("5b0d97e35101fc907977fa9e")                                                                                 
+}                                                                                                                                           
+> db.collection.insertOne( {Name:"Vedha",Amount:80,City:"Seattle"} )                                                                        
+{                                                                                                                                           
+        "acknowledged" : true,                                                                                                              
+        "insertedId" : ObjectId("5b0d980d5101fc907977fa9f")                                                                                 
+}                                                                                                                                           
+> db.collection.insertOne( {Name:"Cherry",Amount:80,City:"India"} )                                                                         
+{                                                                                                                                           
+        "acknowledged" : true,                                                                                                              
+        "insertedId" : ObjectId("5b0d98515101fc907977faa0")                                                                                 
+}                                                                                                                                           
+> db.collection.insertOne( {Name:"Sam",Amount:80,City:"India"} )                                                                            
+{                                                                                                                                           
+        "acknowledged" : true,                                                                                                              
+        "insertedId" : ObjectId("5b0d986a5101fc907977faa1")                                                                                 
+}      
+....................................................................query the data.................................................
+
+> db.collection.find()                                                                                                                      
+{ "_id" : ObjectId("5b0d97735101fc907977fa9b"), "Name" : "Ramesh", "Amount" : 100, "City" : "California" }                                  
+{ "_id" : ObjectId("5b0d97965101fc907977fa9c"), "Name" : "James", "Amount" : 10, "City" : "California" }                                    
+{ "_id" : ObjectId("5b0d97c75101fc907977fa9d"), "Name" : "David", "Amount" : 40, "City" : "Seattle" }                                       
+{ "_id" : ObjectId("5b0d97e35101fc907977fa9e"), "Name" : "Ray", "Amount" : 140, "City" : "Seattle" }                                        
+{ "_id" : ObjectId("5b0d980d5101fc907977fa9f"), "Name" : "Vedha", "Amount" : 80, "City" : "Seattle" }                                       
+{ "_id" : ObjectId("5b0d98515101fc907977faa0"), "Name" : "Cherry", "Amount" : 80, "City" : "India" }                                        
+{ "_id" : ObjectId("5b0d986a5101fc907977faa1"), "Name" : "Sam", "Amount" : 80, "City" : "India" }                                           
+                                                                        

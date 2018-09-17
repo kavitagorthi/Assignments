@@ -1,0 +1,132 @@
+
+# ...........debug simpleexample...............................
+
+def main():
+    x = 'main'
+    one()
+
+def one():
+    y = 'one'
+    two()
+
+def two():
+    z = 'two'
+    long_loop()
+
+def long_loop():
+    for i in range(int(1e04)):
+        l = i + 1
+        if i == 777:
+            print("terrible bug at ", i)
+    result = i + 1
+    print(result)
+
+if __name__ == '__main__':
+     main()
+     print("last statement")
+
+#.......................debug really simple ..............................................................................
+# if the value of i was 50 and above the zeroDivisionError will occur try and except block will handle it.
+
+
+def my_fun():
+
+    for i in range(1, 500):
+        try :
+             123 / (50 - i)
+        except ZeroDivisionError:
+            print("Tried to divide by zero. Var i was {} and above. Recovered gracefully.".format(i))
+
+def secret_print():
+    print("HERE!")
+
+
+
+if __name__=='__main__':
+    secret_print()
+    my_fun()
+
+
+#........................................debug organize................................................................
+def organize(l):
+    print(l)
+    for p in range(len(l)-1):
+        for i in range(0,len(l)-1-p):
+            if l[i] > l[i+1]:
+                t = l[i]
+                l[i] = l[i+1]
+                l[i+1] = t
+
+    print(l)
+
+if __name__ == '__main__':
+    l = [54,26,93,17,77,31,44,55,20]
+    organize(l)
+
+#...................................................debug complicated example....................................................
+
+
+
+def main():
+    x = 'main'
+    one()
+
+def one():
+    y = 'one'
+    two()
+
+def two():
+    z = 'two'
+    long_loop()
+
+def long_loop():
+    try:
+        for i in range(2, int(1e03), 5):
+            for j in range(3, int(1e03), 7):
+                for k in range(12, int(1e03)):
+                                    z = k / (i % k + j % k)
+
+
+    except ZeroDivisionError:
+        print("Tried to divide by zero. Var i was {}  and k was {}  and j was {} . Recovered gracefully.".format(i,k,j))
+
+
+
+
+if __name__ == '__main__':
+    main()
+    print("last statement")
+
+
+#.........................................debug webserver............................
+
+
+def hello_world():
+    import pdb; pdb.set_trace();
+    return 'Hello, World!'
+
+
+hello_world()
+
+#...............................................debug recursive.......................................
+
+# if n value >= 2 will not get any recursion issues
+
+import sys
+
+
+def my_fun(n):
+    if (n>= 2):
+        if n == 2:
+            return True
+        else:
+            return n+my_fun(n-1)/2
+    else:
+        return None
+
+if __name__ == '__main__':
+    n = int(2)
+    print(my_fun(n))
+
+
+

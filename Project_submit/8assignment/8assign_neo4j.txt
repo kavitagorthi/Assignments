@@ -1,0 +1,67 @@
+................................http://console.neo4j.org/............................worked in this website................
+..........................................inserting the data................................
+    
+
+Query:
+CREATE (dnam:Donar{Donarname: "lilly", Amount: 55, Email: "lilly@gmail.com"})
+
+
+Query took 164 ms and returned no rows. 
+Updated the graph - created 1 node set 3 properties Result Details
+
+
+
+Query:
+CREATE (dnam:Donar{Donarname: "lucky", Amount: 155, Email: "lucky@gmail.com"})
+
+
+Query took 46 ms and returned no rows. 
+Updated the graph - created 1 node set 3 properties Result Details
+
+
+
+Query:
+CREATE (dnam:Donar{Donarname: "David", Amount: 550, Email: "David@gmail.com"})
+
+
+Query took 78 ms and returned no rows. 
+Updated the graph - created 1 node set 3 properties Result Details
+
+
+
+Query:
+CREATE (dnam:Donar{Donarname: "Veena", Amount: 75, Email: "Veene@gmail.com"})
+
+
+Query took 41 ms and returned no rows. 
+Updated the graph - created 1 node set 3 properties Result Details
+
+
+
+Query:
+CREATE (dnam:Donar{Donarname: "Vedha", Amount: 35, Email: "Vedha@gmail.com"})
+
+
+Query took 123 ms and returned no rows. 
+Updated the graph - created 1 node set 3 properties Result Details
+
+
+
+Query:
+CREATE (dnam:Donar{Donarname: "Cherry", Amount: 50, Email: "Cherry@gmail.com"})
+
+
+Query took 41 ms and returned no rows. 
+Updated the graph - created 1 node set 3 properties Result Details
+............................................................................Result of the Query.............................................
+(6:Donar {Amount:55, Donarname:"lilly", Email:"lilly@gmail.com"})
+(7:Donar {Amount:155, Donarname:"lucky", Email:"lucky@gmail.com"})
+(8:Donar {Amount:550, Donarname:"David", Email:"David@gmail.com"})
+(20:Donar {Amount:75, Donarname:"Veena", Email:"Veene@gmail.com"})
+(40:Donar {Amount:35, Donarname:"Vedha", Email:"Vedha@gmail.com"})
+(41:Donar {Amount:50, Donarname:"Cherry", Email:"Cherry@gmail.com"})
+
+
+
+
+

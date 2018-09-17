@@ -1,0 +1,65 @@
+.......i worked in this site...........http://try.redis.io/.......................
+...................inserting the data.......................
+
+> set David:Phno "405-406-6745"
+OK
+> set David:Amount "20"
+OK
+> set David:City "Seattle"
+OK
+> set David:Email "David@gmail.com"
+OK
+> set Rupa:Phno "206-406-6745"
+OK
+> set Rupa:Amount "120"
+OK
+> set Rupa:City "Seattle"
+OK
+> set Rupa:Email "Rupa@gmail.com"
+OK
+> set Vedha:Phno "206-406-2775"
+OK
+> set Vedha:Amount "50"
+OK
+> set Vedha:City "Sanfrancisco"
+OK
+> set Vedha:Email "Vedha@gmail.com"
+OK
+> set Cherry:Phno "915-406-2775"
+OK
+> set Cherry:Amount "250"
+OK
+> set Cherry:City "Vizag"
+OK
+> set Cherry:Email "Cherry@gmail.com"
+OK
+> set Sreeni:Phno "888-406-2222"
+OK
+> set Sreeni:Amount "330"
+OK
+> set Sreeni:City "ongole"
+OK
+> set Sreeni:Email "Sreeni@gmail.com"
+OK
+....................................................querying the data....................................................................................
+> KEYS *City
+1) "Vedha:City"
+2) "David:City"
+3) "Cherry:City"
+4) "Rupa:City"
+5) "Sreeni:City"
+
+> get Vedha:Email
+"Vedha@gmail.com"
+> Get Vedha:City
+"Sanfrancisco"
+> Get Cherry:Phno
+"915-406-2775"
+> get Cherry:Amount
+"250"
+
+
+
+
+
+

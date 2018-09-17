@@ -1,0 +1,53 @@
+
+.......i worked in this site...........http://try.redis.io/.......................
+...................inserting the data.......................
+> set David:phno "405-406-6745"
+OK
+> set David:zip "76012"
+OK
+> get David:phno
+"405-406-6745"
+> get David:zip
+"76012"
+> set jai:phno "302-409-7890"
+OK
+> set jai:zip "32145"
+OK
+> set lilly:phno "444-222-1234"
+OK
+> set lilly:zip "21067"
+OK
+> set Frank:phno "604-777-1234"
+OK
+> set Frank:zip "61278"
+OK
+> set sreeni:phno "512-451-6745"
+OK
+> set sreeni:zip "55578"
+OK
+
+...............................querying all the data.....................
+> KEYS *phno
+1) "Frank:phno"
+2) "jai:phno"
+3) "ram:phno"
+4) "lilly:phno"
+5) "sreeni:phno"
+6) "David:phno"
+> KEYS *zip
+1) "Frank:zip"
+2) "jai:zip"
+3) "ram:zip"
+4) "sreeni:zip"
+5) "lilly:zip"
+6) "David:zip"
+..............................querying phno with specific names............
+> get Frank:phno
+"604-777-1234"
+> get ram:phno
+"206-123-4506"
+................................querying zip with specific names..............
+> get Frank:zip
+"61278"
+> get ram:zip
+"98012"

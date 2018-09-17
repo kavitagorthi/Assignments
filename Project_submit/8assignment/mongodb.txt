@@ -1,0 +1,64 @@
+  https://www.tutorialspoint.com/mongodb_terminal_online.php
+I worked in the above website for mongodb
+
+                                                        
+...............................Mongodb......................inserting the data.................................................
+
+db.collection.insertOne(                                                                         
+... {                                                                                              
+... item  :"couch",qty :10,color : "red"}                                                          
+... )                                                                                              
+{                                                                                                  
+        "acknowledged" : true,                                                                     
+        "insertedId" : ObjectId("5b072dd5524c5685787b15f2")                                        
+}    
+                                                                                                 
+> db.collection.insertOne( { item  :"couch",qty :10,color : "blue"} )                              
+{                                                                                                  
+        "acknowledged" : true,                                                                     
+        "insertedId" : ObjectId("5b072e0f524c5685787b15f3")                                        
+}                                                                                                  
+> db.collection.insertOne( { item  :"sofa",qty :10,color : "blue"} )                               
+{                                                                                                  
+        "acknowledged" : true,                                                                     
+        "insertedId" : ObjectId("5b072e2e524c5685787b15f4")                                        
+}                                                                                                  
+> db.collection.insertOne( { item  :"sofa",qty :10,color : "red",size :"small"} )                  
+{                                                                                                  
+        "acknowledged" : true,                                                                     
+        "insertedId" : ObjectId("5b072e54524c5685787b15f5")                                        
+}   
+ db.collection.insertOne( { item  :"sofa",qty :10,color : "red",size :"small"} )                  
+{                                                                                                  
+        "acknowledged" : true,                                                                     
+        "insertedId" : ObjectId("5b072e54524c5685787b15f5")                                        
+}                                                                                                  
+> db.collection.insertOne( { item  :"sofa",qty :10,color : "blue",size :"small"} )                 
+{                                                                                                  
+        "acknowledged" : true,                                                                     
+        "insertedId" : ObjectId("5b072e96524c5685787b15f6")                                        
+}                                                                                                  
+> db.collection.insertOne( { item  :"sofa",qty :10,color : "white"} )                              
+{                                                                                                  
+        "acknowledged" : true,                                                                     
+       "insertedId" : ObjectId("5b072eb6524c5685787b15f7")      
+                              
+}    
+
+....................................result........all the data ...............................................................
+
+> db.collection.find()                                                                                             
+{ "_id" : ObjectId("5b072b5c524c5685787b15f1"), "item" : "RED", "quantity" : 10 }                                  
+{ "_id" : ObjectId("5b072dd5524c5685787b15f2"), "item" : "couch", "qty" : 10, "color" : "red" }                    
+{ "_id" : ObjectId("5b072e0f524c5685787b15f3"), "item" : "couch", "qty" : 10, "color" : "blue" }                   
+{ "_id" : ObjectId("5b072e2e524c5685787b15f4"), "item" : "sofa", "qty" : 10, "color" : "blue" }                    
+{ "_id" : ObjectId("5b072e54524c5685787b15f5"), "item" : "sofa", "qty" : 10, "color" : "red", "size                
+" : "small" }                                                                                                      
+{ "_id" : ObjectId("5b072e96524c5685787b15f6"), "item" : "sofa", "qty" : 10, "color" : "blue", "siz                
+e" : "small" }                                                                                                     
+{ "_id" : ObjectId("5b072eb6524c5685787b15f7"), "item" : "sofa", "qty" : 10, "color" : "white" }                   
+
+...................................result....................red color couch..........................................
+ db.collection.find({item:"couch",color:"red"})                                                                                                            
+{ "_id" : ObjectId("5b072dd5524c5685787b15f2"), "item" : "couch", "qty" : 10, "color" : "red" }   
+                                                                                                                                                                                       
